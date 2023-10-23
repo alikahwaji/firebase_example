@@ -15,7 +15,7 @@ const dbRef = collection(db, "contacts")
 
 const leftCol = document.getElementById("left-col")
 const backBtn = document.getElementById("back-btn")
-const rightCol = document.getElementById("right-col")
+
 
 backBtn.addEventListener('click', (e) => {
 leftCol.style.display = "block"
@@ -139,3 +139,6 @@ email.value = contact.email
 
 modalOverlay.setAttribute("contact-id", contact.id)
 }
+
+// SECTION - Display Information on list item click
+const rightCol = document.getElementById('right-col')
